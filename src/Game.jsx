@@ -30,7 +30,7 @@ export default function Game() {
         if (!memory.includes(id)) { // not repeat, continue
             setScore(score + 1)
             setMemory([...memory, id])
-            if(score >= highScore){
+            if (score >= highScore) {
                 setHighScore(score + 1)
             }
         } else { // repeated
@@ -54,7 +54,7 @@ export default function Game() {
     }, [pokeData])
 
     useEffect(() => {
-        if(highScore === randomArr.length){
+        if (highScore === randomArr.length) {
             alert('You won, please refresh the page for new game!')
         }
     }, [highScore])
@@ -67,8 +67,10 @@ export default function Game() {
     console.log('main loop')
     return (
         <>
-            <p>Score : {score}</p>
-            <p>High Score : {highScore}</p>
+            <div className="scoreBar">
+                <p>Score : {score}</p>
+                <p>High Score : {highScore}</p>
+            </div>
             <div className="card-panel">
                 {pokeData.map(pokemon => {
                     if (!pokemon) return
