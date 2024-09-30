@@ -1,7 +1,19 @@
-# A simple memory card game (non profitable) with pokemon icon
+# Memory Card Game / odin-memory-card
 
-Use React, with useState and useEffect for API call.
+A game where user continue to select card without repeating. Images used are from pokeAPI. Created with react, vite
 
-1. git clone.
+![photo](memory-card.png)
+
+## Live demo
+- https://odin-memory-card-game.netlify.app/
+
+## Tech stack 
+-  React / Javascript
+
+## Source
+- https://github.com/WongYC-66/odin-memory-card
+
+## Installation
+1. npm install 
 2. npm run dev
-3. Live at https://poke-memory-game-ycw.netlify.app/
+
